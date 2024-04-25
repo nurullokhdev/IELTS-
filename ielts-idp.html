@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS IDP </title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        .body{
+            padding: 0;
+            margin: 0;
+            font-family: opensans-regular,sans-serif ;
+            padding-bottom: 600px;
+            position: absolute;
+        }
+
+
+        .head-section{
+            height: 80px;
+            background-color: rgb(250, 250, 250);
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            flex-direction: row;
+            align-items: center;
+            padding-left: 48px;
+            display: flex;
+            box-sizing: border-box;
+            border-bottom: 1px solid #ccc;
+        }
+        .idp{
+            align-items: center;
+            display: flex;
+            box-sizing: border-box;
+        }
+        .header-text{
+            box-sizing: border-box;
+            display: flex;
+            font-family:opensans-regular, sans-serif ;
+            background-color: rgb(250, 250, 250) ;
+            color: rgb(62, 57, 57);
+            padding-left: 50px;
+            font-size: 15px;
+        }
+        .search-box{
+            display: flex;
+            position: relative;
+            text-align: center;
+            font-family: sans-serif;
+            margin-right: 0px;  
+            margin-left: 320px;
+
+        }
+        .book-button{
+            display: flex;
+            position: relative;
+            left: 1320px;
+            top: 20px;
+            margin-left: 10px;
+            position: fixed;
+            color: white;
+            background-color: #d81832;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 4px;
+        }
+
+
+        .main-section{
+            width: 100%;
+            background-color: white;
+            padding-top: 40px;
+        }
+        .box-1{
+            height: 520px;
+            width: 550px;
+            background-color: white;
+            display: inline-block;
+            box-sizing: border-box;
+            padding-top: 74px;
+            padding-left: 50px;
+            position: relative;
+            top: -150px;
+            left: 105px;
+            border: solid 1px #ccc ;  
+            border-radius: 10px;
+            margin-bottom: 0;
+        }
+        .box-2{
+            height: 480px;
+            width: 720px;
+            margin-top: 86px;
+            background-color: rgb(135, 57, 32);
+            display: inline-block;
+            box-sizing: border-box;
+            position: relative;
+            left: 100px;
+            margin-bottom: 0;
+        }
+        .first-text{
+            display: flex;
+            font-size: 36px;
+            font-weight: bolder;
+            line-height: 42px;
+            margin-bottom: 20px;
+        }
+        .second-text{
+            display: flex;
+            font-size: 19px;
+            line-height: 32px;
+            color: rgb(65, 59, 59);
+            margin-bottom: 20px;
+        }
+        .book-test{
+            font-size: 15px;
+            color: rgb(227, 24, 55);
+            background-color: white;
+            text-align: center;
+            cursor: pointer;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 42px;
+            padding-right: 42px;
+            border: solid 1px rgb(227, 24, 55);
+            border-radius: 6px;
+            margin-bottom: 0;                   
+        }
+        .big{
+            font-size: 21px;
+            line-height: 21px;
+            font-weight: bold;
+            color: rgb(236, 29, 29);
+            margin-bottom: 0;
+            padding-left: 10px;
+        }
+        .meddium{
+            padding-left: 10px;
+            font-size: 16px;
+            color: rgb(44, 41, 41);
+            line-height:28px ;
+        }
+        .small{
+            padding-left: 10px;
+            font-size: 14px;
+            color:rgb(68, 68, 197) ;
+        }
+        .svg{
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: -8px;
+            color: rgb(79, 79, 212);   
+        }
+
+
+
+        .img-7{
+            padding-top: 26px;
+            padding-left: 26px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            box-sizing: border-box;
+
+        }
+        .academic{
+            font-size:19px ;
+            font-weight:600 ;
+            color: rgb(0, 0, 0);
+            font-family: proxima-nova-semi-bold, sans-serif ;
+            line-height: 24px;
+            margin-top: 30px;
+            margin-left: 26px;
+
+        }
+        .need{
+            color: rgb(0, 0, 0);
+            font-family: proxima-nova-semi-bold, sans-serif ;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-top: 20px;
+            margin-left: 26px;
+            margin-right: 30px;
+            border-bottom: #ccc;
+            padding-bottom: 20px;
+            border-bottom: solid 1px #ccc;
+        }
+        .more{
+            background-color:rgb(227, 24, 55);
+            color: white;
+            align-items: center;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+            border: none;
+            padding-bottom: 12px;
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-top: 12px;
+            border-radius: 4px;
+            margin-left: 200px;
+            margin-top: 20px;
+        }
+
+
+        .achieve{
+            display: grid;
+            font-size: 38px;
+            font-weight: 700;
+            height: 176px;
+            padding-left: 56px;
+            padding-top: 80px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            font-family: sans-serif;
+        }
+        .governent{
+            font-size: 18px;
+            color:rgb(51, 53, 65) ;
+            font-weight: 400;
+            line-height: 32px;
+            padding-left: 56px;
+            padding-top: 0;
+        }
+        .now{
+            background-color: white;
+            color:rgb(227, 24, 55) ;
+            align-items: center;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            height: 48px;
+            width: 180px;
+            border: solid 1px rgb(227, 24, 55);
+            border-radius: 4px;
+            margin-left: 56px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <div class="head-section">
+        <div class="idp"><img src="IELTS.style/idp_ielts_logo.svg" alt=""> </div>
+
+        <div class="header-text">IELTS tests <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="rgb(62, 57, 57)" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+          </svg> </div>
+        <div class="header-text">Prepare <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="rgb(62, 57, 57)" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+          </svg> </div>
+        <div class="header-text" >Results  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="rgb(62, 57, 57)" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+          </svg></div>
+        <div class="header-text">IELTS community<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="rgb(62, 57, 57)" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+          </svg>  </div>
+        <div class="header-text">About  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="rgb(62, 57, 57)" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+          </svg></div>
+
+        <div class="search-box"><div ></div > <i class='bx bx-search' style="font-size: 24px; color: rgb(51, 53, 65) ;"></i></div>Search</div>
+        <button class="book-button">Book now</button> 
+    </div>
+
+
+
+
+    <div style=" display: grid; grid-template-columns: 1fr 1fr ; margin-top: 30px; margin-bottom: 100px; margin-left: 50px; margin-top: 120px; padding-right: 0; margin-right: 54px;">
+        <div style="background-color: rgb(250, 250, 250); width: 580px; height: 475px; border: solid 1px #ccc; border-top-left-radius: 16px; border-bottom-left-radius: 16px;">
+            <div class="achieve">Achieve your work, study and migration goals with IELTS by IDP</div>
+            <div class="governent">IELTS is accepted by more government agencies, <br> educational institutions, and professional bodies than <br> any other English-language test.</div>
+            <button class="now"> Book test now</button>
+        </div>
+        <div style="background-color: rgb(255, 255, 255); width: 840px;  height: 475px;"><img style="width: 840px; height: 475px; border-top-right-radius: 16px; border-bottom-right-radius: 16px;" src="IELTS.style/ielts-home.avif" alt=""></div>
+    </div>
+
+
+
+
+    <div style=" display: grid; height: 250px;grid-template-columns: 365px 1fr 1fr;  margin-top: 0px; margin-left: 200px; margin-right: 190px; column-gap: 26px; width: 550px;">
+        <div style="background-color: rgb(255, 255, 255); border: solid 1px #ccc; border-radius: 4px; height: 250px;width: 350px; padding-top: 14px; padding-left: 14px;display: grid; ">
+            <div ><img src="IELTS.style/calendar-outline_1.svg" alt=""> </div>
+            <div class="big">Book IELTS</div> 
+            <div class="meddium">Find your closest IELTS test centre and <br> book your test</div> 
+            <div class="small">Book test now <svg  style="text-align: center; bottom: -8px"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="rgb(68, 68, 197)" d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"/>
+            </svg>
+            </div>
+        </div>
+
+        <div style="background-color: rgb(255, 255, 255); height: 250px; border: solid 1px #ccc; border-radius: 4px; width: 350px; padding-top: 14px; padding-left: 14px;display: grid; ">
+            <div><img src="IELTS.style/book-outline_1.svg" alt=""> </div>
+            <div class="big">Prepare for IELTS</div> 
+            <div class="meddium">Prepare for IELTS these helpful <br> resourses</div> 
+            <div class="small">Book test now <svg  style="text-align: center; bottom: -8px"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="rgb(68, 68, 197)" d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"/>
+            </svg> </div>
+         </div>
+
+        <div style="background-color: rgb(255, 255, 255); height: 250px; border: solid 1px #ccc; border-radius: 4px; width: 350px; padding-top: 14px; padding-left: 14px;display: grid; ">
+            <div><img src="Results.svg" alt=""> </div>
+            <div class="big">Check IELTS results</div> 
+            <div class="meddium">If you have taken IELTS, check your IELTS <br> results</div> 
+            <div class="small">Check your IELTS results <svg  style="text-align:  center;  bottom: -8px;"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="rgb(68, 68, 197)" d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"/>
+             </svg> </div>
+        </div>  
+    </div>
+</div>
+
+
+
+         
+        <div>
+            <div style="margin: 100px; margin-left: 210px; color: rgb(0, 0, 0); display: flex; font-size: 38px; font-weight: 700; line-height: 44px; font-family: sans-serif;">
+                <div style="background-color: rgb(255, 131, 0) ; width: 8px ; height: 44px; margin-left: -10px; margin-right: 30px;" ></div>
+                IELTS tests</div>
+
+            
+            <div style=" display: grid; grid-template-columns: 356px 366px 356px; margin-top: 30px; column-gap: 26px; row-gap: 40px; margin-left: 200px; height: 439px; margin-right: 100px; border: solid 1 px #ccc;">
+                <div style="background-color: rgb(255, 255, 255); height: 439px; border: solid 1px #ccc; border-radius: 6px;" > 
+                    <div class="img-7" ><img src=" IELTS.style/IELTS-website-2-_2-29.avif" alt=""></div>
+                    <div class="academic" >IELTS Academic test</div>
+                    <div class="need"> Find out if you need to take IELTS Academic <br> test. Take a closer look at the test format, how <br> it is marked and what to expect on test day.</div>
+                    <button class="more">Learn more</button>
+                </div>
+
+                <div style="background-color: rgb(255, 255, 255); height: 439px; border: solid 1px #ccc; border-radius: 6px;" > 
+                    <div class="img-7" ><img src=" IELTS.style/190213.PN.ielts-2565.avif" alt=""></div>
+                    <div class="academic" > IELTS General Training test</div>
+                    <div class="need">Learn about IELTS General Training test and <br> whether you need to take the General Training <br> test to achieve your work or migration goals </div>
+                    <button class="more">Learn more</button>
+                </div>
+
+                <div style="background-color: rgb(255, 255, 255); height: 439px; border: solid 1px #ccc; border-radius: 6px;" > 
+                    <div class="img-7" ><img src=" IELTS.style/test-takers-sit-around-after-a-masterclass.avif" alt=""></div>
+                    <div class="academic" >IELTS Masterclass  </div>
+                    <div class="need"> IELTS Masterclass is a free seminar presented <br>by IELTS Experts. Hear Expert tips, mistakes to <br> avoid, how to manage your time and more. </div>
+                    <button class="more">Learn more</button>
+                </div>
+            </div>
+        </div>
+
+
+    <div>
+        <div style="margin: 100px; margin-left: 210px; color: rgb(0, 0, 0); display: flex; font-size: 38px; font-weight: 700; line-height: 44px; font-family: sans-serif;">
+            <div style="background-color: rgb(255, 131, 0) ; width: 8px ; height: 44px; margin-left: -10px; margin-right: 30px; margin-bottom: 0; padding-bottom: 0;" ></div>
+            Featured news and articles
+            <button style="background-color:rgb(255, 255, 255)  ; margin-left: 400px; border-radius: 4px; border-color: solid 1px (107, 107, 107); font-size: 16px; cursor: pointer; font-weight: 600; line-height: 24px; text-align: center; height: 48px; width: 180px;">View the article</button>
+        </div>
+    
+        <div style=" display: grid; grid-template-columns: 1fr 1fr ; margin-top: 0px; margin-right: 656px; margin-left: 200px; column-gap: 28px;">
+            <div style="background-color: white; height: 350px; border: solid 1px #ccc; border-radius: 6px;">
+            <div><img style="width: 318px; border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;" src="IELTS.style/A_group_of_test_takers_attending_computer-delivered_IELTS_test..avif" alt=""></div>
+            <div style="font-size: 18px; font-weight: 600; margin-left: 14px; margin-top: 12px;">5 reasons why IELTS is the top-choice of test takers worldwide</div>
+            <div style="font-size: 14px ; color:rgb(51, 53, 65) ; margin-left: 14px; margin-top: 46px;"><img src="IELTS.style/clock.svg" alt=""> 5 mins read</div>
+            </div>
+
+        <div style="background-color: white; height: 350px; border: solid 1px #ccc; border-radius: 6px;">
+            <div><img style="width: 318px; border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;" src=" IELTS.style/Two_women_read_official_IELTS_preparation_materials.avif " alt=""></div>
+            <div style="font-size: 18px; font-weight: 600; margin-left: 14px; margin-top: 12px;"> IELTS Academic Writing free practice questions </div>
+            <div style="font-size: 14px ; color:rgb(51, 53, 65) ; margin-left: 14px; margin-top: 46px;"><img src=" IELTS.style/clock.svg" alt=""> 30 mins read</div>
+        </div>
+    </div>
+</div>
+
+<div style="font-size: 50px; text-align: center; margin-top: 200px; font-family: PT serif ; font-weight: 500; border: solid 1px #ccc; display: grid; width: 1000px; margin-left: 250px;" >
+    THANKS FOR ATTENTION
+</div>
+
+        
+</body>
+</html>
